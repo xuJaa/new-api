@@ -28,5 +28,6 @@ jobs:
         context: .
         push: true
         # 镜像名称和标签，latest 表示最新版
+        # 修复了缩进和表达式语法
         tags: |
-            ghcr.io/${{ github.repository | lower }}:latest
+          ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name | lowercase }}:latest
