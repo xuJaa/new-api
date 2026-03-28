@@ -29,4 +29,4 @@ jobs:
         push: true
         # 镜像名称和标签，latest 表示最新版
         tags: |
-          ghcr.io/${{ github.repository_owner }}/你的项目名:latest
+            ghcr.io/${{ github.repository }}:latest
