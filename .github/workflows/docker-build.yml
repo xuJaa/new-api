@@ -27,5 +27,6 @@ jobs:
       with:
         context: .
         push: true
+        # 使用 toLower() 函数强制转换为小写
         tags: |
-          ghcr.io/${{ github.repository_owner }}/new-api:latest
+          ghcr.io/${{ toLower(github.repository_owner) }}/${{ toLower(github.event.repository.name) }}:latest
